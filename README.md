@@ -6,38 +6,6 @@ This page is devoted to the edition of a randomisation list for a randomised cli
 
 <br>
 
-### TEST
-
-<br>
-
-<dl>
-<dt> <details> <summary> RANDO 1</summary></dt>
-
-<dd>BLA BLA BLA</dd>
-</details>
-
-
-<dt> <details> <summary> RANDO STRATIFICATION</summary></dt>
-
-  <dl>
-
-  <dt> <details> <summary> Strate = 1 vari </summary> </dt>
-  BLA BLA
-  </details>
-  
-  <dt> <details> <summary> Strate > 1 variable <dt>
-  BLA BLA
-  </details>
-  
-  </dl>
-
-</details>
-</dl>
-
-
-<br>
-<br>
-
 <details>
 <summary>RANDOMISATION WITHOUT STRATIFICATION</summary>
 <br>
@@ -79,6 +47,10 @@ table(edit_list*treatment)
 
 <details>
 <summary>Stratification with one variable</summary>
+<br>
+
+### Stratification with one variable
+
 <br>
 
 *In order to edit a randomisation list for a RCT comparing an experimental treatment against placebo (2 arms), using random block sizes of 4, 6 and 8 (meaning that each block is defined with 2, 3, or 4 occurences of each arm), and considering a randomisation stratified with gender (male, female), we can compute the following code:*
