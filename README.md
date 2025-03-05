@@ -10,9 +10,8 @@ This page is devoted to the edition of a randomisation list for a randomised cli
 
 <br>
 
-## RANDOMISATION WITHOUT STRATIFICATION
-
 <details>
+<summary>RANDOMISATION WITHOUT STRATIFICATION</summary>
 <br>
 
 *In order to edit a randomisation list for a RCT comparing an experimental treatment against placebo (2 arms), using random block sizes of 6, 8, 10 and 12 (meaning that each block is defined with 3, 4, 5 or 6 occurences of each arm), we can compute the following code:*
@@ -88,7 +87,7 @@ table(edit_list$stratum, edit_list*treatment)
 * block : vector of integers defining the block sizes (number of occurence of each arm)
 * strat : vector of labels for stratum (vector size = number of stratum)
 
-
+</details>
 
 <details>
 <summary>Stratification with more than one variable</summary>
