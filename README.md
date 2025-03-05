@@ -44,7 +44,8 @@ table(edit_list*treatment)
 </details>	
 
 
-## RANDOMISATION WITH STRATIFICATION
+<details>
+<summary>## RANDOMISATION WITH STRATIFICATION</summary>
 
 
 <details>
@@ -133,3 +134,5 @@ table(edit_list$stratum, edit_list*treatment)
 
 
 </details>	
+
+</details>
