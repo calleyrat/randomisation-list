@@ -36,15 +36,12 @@ table(edit_list*treatment)
 * labelArms : vector of labels for randomised arms (vector size = number of arms)
 * block : vector of integers defining the block sizes (number of occurence of each arm)
 
-
 </details>	
+<br>
 
 
 <details>
 <summary>RANDOMISATION WITH STRATIFICATION</summary>
-
-<br>
-
 
 ### Stratification with one variable
 
@@ -84,6 +81,7 @@ table(edit_list$stratum, edit_list*treatment)
 * block : vector of integers defining the block sizes (number of occurence of each arm)
 * strat : vector of labels for stratum (vector size = number of stratum)
 
+<br>
 
 ### Stratification with more than one variable
 
