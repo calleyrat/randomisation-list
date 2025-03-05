@@ -10,29 +10,33 @@ This page is devoted to the edition of a randomisation list for a randomised cli
 
 <br>
 
-<ul>
+<dl>
+<dt> <details> <summary> RANDO 1</summary></dt>
 
-<li> <details> <summary> RANDO 1</summary></li>
+<dd>BLA BLA BLA</dd>
+</details>
 
-BLA BLA BLA
 
-<li> <details> <summary> RANDO STRATIFICATION</summary></li>
+<dt> <details> <summary> RANDO STRATIFICATION</summary></dt>
 
-  <ul>
+  <dl>
 
-  <li> Strate = 1 vari </li>
-  
+  <dt> <details> <summary> Strate = 1 vari </summary> </dt>
   BLA BLA
+  </details>
   
-  <li> Strate > 1 variable <li>
-  
+  <dt> <details> <summary> Strate > 1 variable <dt>
   BLA BLA
+  </details>
   
-  </ul>
+  </dl>
+
+</details>
+</dl>
 
 
-</ul>
-
+<br>
+<br>
 
 <details>
 <summary>RANDOMISATION WITHOUT STRATIFICATION</summary>
