@@ -2,13 +2,37 @@
 
 <div style="text-align: justify">
 
-This page is devoted to the edition of a randomisation list for a randomised clinical trial (RCT). We focus here on randomisation within blocks, in order to provide a balance between arms throughout the study. R codes are proposed for:
-
-* Randomisation without stratification.
-
-* Randomisation with stratification.
+This page is devoted to the edition of a randomisation list for a randomised clinical trial (RCT). We focus here on randomisation within blocks, in order to provide a balance between arms throughout the study. R codes are proposed below.
 
 <br>
+
+### TEST
+
+<br>
+
+<ul>
+
+<li> <details> <summary> RANDO 1</summary></li>
+
+BLA BLA BLA
+
+<li> <details> <summary> RANDO STRATIFICATION</summary></li>
+
+  <ul>
+
+  <li> Strate = 1 vari </li>
+  
+  BLA BLA
+  
+  <li> Strate > 1 variable <li>
+  
+  BLA BLA
+  
+  </ul>
+
+
+</ul>
+
 
 <details>
 <summary>RANDOMISATION WITHOUT STRATIFICATION</summary>
@@ -45,8 +69,9 @@ table(edit_list*treatment)
 
 
 <details>
-<summary>## RANDOMISATION WITH STRATIFICATION</summary>
+<summary>RANDOMISATION WITH STRATIFICATION</summary>
 
+<br>
 
 <details>
 <summary>Stratification with one variable</summary>
