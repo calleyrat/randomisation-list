@@ -25,7 +25,9 @@ mylist <- blockrand(n=Npat,
                     block.sizes = block)
 }
 
-edit_list <- randomisation_list(myseed=9478, Npat=210, labelArms=c("Placebo","Experimental treatment"), block=c(3,4,5,6))
+edit_list <- randomisation_list(myseed=9478, Npat=210, 
+                                labelArms=c("Placebo","Experimental treatment"), 
+                                block=c(3,4,5,6))
 table(edit_list$treatment) 
 
 
@@ -51,7 +53,8 @@ table(edit_list$treatment)
 
 library(blockrand)
 
-randomisation_list_strat <- function(myseed, Npat, labelArms = c("A","B"), block = 1:4, strat = c("Stratum1","Stratum2")) 
+randomisation_list_strat <- function(myseed, Npat, labelArms = c("A","B"), block = 1:4, 
+                                     strat = c("Stratum1","Stratum2")) 
 {
 set.seed(myseed)
 
@@ -70,7 +73,10 @@ for (i in 1:length(strat)) {
 }
 }
 
-edit_list <- randomisation_list(myseed=72048, Npat=128, labelArms=c("Placebo","Experimental treatment"), block=2:4, strat=c("Male","Female"))
+edit_list <- randomisation_list_strat(myseed=72048, Npat=128, 
+                                      labelArms=c("Placebo","Experimental treatment"), 
+                                      block=2:4, 
+                                      strat=c("Male","Female"))
 table(edit_list$stratum, edit_list$treatment) 
 
 ```
@@ -91,7 +97,8 @@ table(edit_list$stratum, edit_list$treatment)
 
 library(blockrand)
 
-randomisation_list_strat <- function(myseed, Npat, labelArms = c("A","B"), block = 1:4, strat = c("Stratum1","Stratum2")) 
+randomisation_list_strat <- function(myseed, Npat, labelArms = c("A","B"), block = 1:4, 
+                                     strat = c("Stratum1","Stratum2")) 
 {
 set.seed(myseed)
 
@@ -110,9 +117,15 @@ for (i in 1:length(strat)) {
 }
 }
 
-edit_list <- randomisation_list(myseed=74792, Npat=172, labelArms=c("Placebo","Experimental treatment"), block=2:4, 
-                                strat=c("<40 and centre 1","<40 and centre 2","<40 and centre 3",
-                                        "40+ and centre 1","40+ and centre 2","40+ and centre 3"))
+edit_list <- randomisation_list_strat(myseed=74792, Npat=172, 
+                                      labelArms=c("Placebo","Experimental treatment"), 
+                                      block=2:4, 
+                                      strat=c("<40 and centre 1",
+                                              "<40 and centre 2",
+                                              "<40 and centre 3",
+                                              "40+ and centre 1",
+                                              "40+ and centre 2",
+                                              "40+ and centre 3"))
 table(edit_list$stratum, edit_list$treatment) 
 
 ```
