@@ -58,8 +58,10 @@ randomisation_list_strat <- function(myseed, Npat, labelArms = c("A","B"), block
 {
 set.seed(myseed)
 
+Npat_strat <- Npat / length(strat)
+
 for (i in 1:length(strat)) {
-  listrand <- blockrand(n=Npat, 
+  listrand <- blockrand(n=Npat_strat, 
                         num.levels = length(labelArms), 
                         levels = labelArms, 
                         block.sizes = block,
@@ -103,8 +105,10 @@ randomisation_list_strat <- function(myseed, Npat, labelArms = c("A","B"), block
 {
 set.seed(myseed)
 
+Npat_strat <- Npat / length(strat)
+
 for (i in 1:length(strat)) {
-  listrand <- blockrand(n=Npat, 
+  listrand <- blockrand(n=Npat_strat, 
                         num.levels = length(labelArms), 
                         levels = labelArms, 
                         block.sizes = block,
