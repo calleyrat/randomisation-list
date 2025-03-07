@@ -10,7 +10,7 @@ This page is devoted to the edition of a randomisation list for a randomised cli
 <summary>RANDOMISATION WITHOUT STRATIFICATION</summary>
 <br>
 
-*In order to edit a randomisation list for a RCT comparing an experimental treatment against placebo (2 arms), using random block sizes of 6, 8, 10 and 12 (meaning that each block is defined with 3, 4, 5 or 6 occurences of each arm), we can compute the following code:*
+*In order to edit a randomisation list for a RCT comparing an experimental treatment against placebo (2 arms), with 410 patients, using random block sizes of 6, 8, 10 and 12 (meaning that each block is defined with 3, 4, 5 or 6 occurences of each arm), we can compute the following code:*
 
 ```r
 
@@ -25,7 +25,7 @@ mylist <- blockrand(n=Npat,
                     block.sizes = block)
 }
 
-edit_list <- randomisation_list(myseed=9478, Npat=210, 
+edit_list <- randomisation_list(myseed=9478, Npat=410, 
                                 labelArms=c("Placebo","Experimental treatment"), 
                                 block=c(3,4,5,6))
 table(edit_list$treatment) 
@@ -47,7 +47,7 @@ table(edit_list$treatment)
 
 ### Stratification with one variable
 
-*In order to edit a randomisation list for a RCT comparing an experimental treatment against placebo (2 arms), using random block sizes of 4, 6 and 8 (meaning that each block is defined with 2, 3, or 4 occurences of each arm), and considering a randomisation stratified with gender (male, female), we can compute the following code:*
+*In order to edit a randomisation list for a RCT comparing an experimental treatment against placebo (2 arms), with 128 patients, using random block sizes of 4, 6 and 8 (meaning that each block is defined with 2, 3, or 4 occurences of each arm), and considering a randomisation stratified with gender (male, female), we can compute the following code:*
 
 ```r
 
@@ -94,7 +94,7 @@ table(edit_list$stratum, edit_list$treatment)
 
 ### Stratification with more than one variable
 
-*In order to edit a randomisation list for a RCT comparing an experimental treatment against placebo (2 arms), using random block sizes of 4, 6 and 8 (meaning that each block is defined with 2, 3, or 4 occurences of each arm), and considering a randomisation stratified with age (< 40 years, > or = 40 years) and centre (3 centres), we can compute the following code:*
+*In order to edit a randomisation list for a RCT comparing an experimental treatment against placebo (2 arms), with 372 patients, using random block sizes of 4, 6 and 8 (meaning that each block is defined with 2, 3, or 4 occurences of each arm), and considering a randomisation stratified with age (< 40 years, > or = 40 years) and centre (3 centres), we can compute the following code:*
 
 ```r
 
@@ -123,7 +123,7 @@ for (i in 1:length(strat)) {
 return(mylist)
 }
 
-edit_list <- randomisation_list_strat(myseed=74792, Npat=172, 
+edit_list <- randomisation_list_strat(myseed=74792, Npat=372, 
                                       labelArms=c("Placebo","Experimental treatment"), 
                                       block=2:4, 
                                       strat=c("<40 and centre 1",
