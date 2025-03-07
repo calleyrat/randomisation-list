@@ -94,7 +94,7 @@ table(edit_list$stratum, edit_list$treatment)
 
 ### Stratification with more than one variable
 
-*In order to edit a randomisation list for a RCT comparing an experimental treatment against placebo (2 arms), with 372 patients, using random block sizes of 4, 6 and 8 (meaning that each block is defined with 2, 3, or 4 occurences of each arm), and considering a randomisation stratified with age (< 40 years, > or = 40 years) and centre (3 centres), we can compute the following code:*
+*In order to edit a randomisation list for a RCT comparing an experimental treatment against placebo (2 arms), with 372 patients, using random block sizes of 4, 6 and 8 (meaning that each block is defined with 2, 3, or 4 occurences of each arm), and considering a randomisation stratified with age (< 40 years, $ge$ 40 years) and centre (3 centres), we can compute the following code:*
 
 ```r
 
