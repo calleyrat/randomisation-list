@@ -71,6 +71,7 @@ for (i in 1:length(strat)) {
     mylist <- listrand
   }
 }
+return(mylist)
 }
 
 edit_list <- randomisation_list_strat(myseed=72048, Npat=128, 
@@ -115,6 +116,7 @@ for (i in 1:length(strat)) {
     mylist <- listrand
   }
 }
+return(mylist)
 }
 
 edit_list <- randomisation_list_strat(myseed=74792, Npat=172, 
